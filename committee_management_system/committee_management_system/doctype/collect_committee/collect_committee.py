@@ -13,6 +13,14 @@ class CollectCommittee(Document):
         if cint(self.amount) <= 0:
             frappe.throw(_('Amount should be greater than zero'))
             
+        exists = frappe.db.sql("""SELECT COUNT(*) FROM `tabCollect Committee` WHERE member = %s AND committee = %s AND month = %s""", (self.member, self.committee, self.month))[0][0]
+        if exists:
+            frappe.throw(
+                            title= "Exists",
+                            msg= _("Committee Collection for member {0} against committee {1} for month {2} is already collected").format(self.member, self.committee, self.month),
+                        )
+
+            
     def on_submit(self):
         gl = frappe.new_doc('Committee Ledger')
         gl.docstatus = 1
