@@ -7,7 +7,13 @@
  "field_order": [
   "posting_date",
   "transaction_date",
-  "committee_member"
+  "committee_member",
+  "committee",
+  "debit",
+  "credit",
+  "remarks",
+  "is_cancelled",
+  "amended_from"
  ],
  "fields": [
   {
@@ -25,11 +31,49 @@
    "fieldtype": "Link",
    "label": "Committee Member",
    "options": "Committee Member"
+  },
+  {
+   "fieldname": "committee",
+   "fieldtype": "Link",
+   "label": "Committee",
+   "options": "Committee"
+  },
+  {
+   "fieldname": "debit",
+   "fieldtype": "Currency",
+   "label": "Debit"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Currency",
+   "label": "Credit"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cancelled",
+   "fieldtype": "Check",
+   "label": "Is Cancelled"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Committee Ledger",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-05-06 23:51:19.880996",
+ "modified": "2024-05-07 23:17:56.754730",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Ledger",
