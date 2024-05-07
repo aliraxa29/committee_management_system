@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-06 23:47:57.409732",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "transaction_date",
+  "committee_member"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Datetime",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Datetime",
+   "label": "Transaction Date"
+  },
+  {
+   "fieldname": "committee_member",
+   "fieldtype": "Link",
+   "label": "Committee Member",
+   "options": "Committee Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-06 23:51:19.880996",
+ "modified_by": "Administrator",
+ "module": "Committee Management System",
+ "name": "Committee Ledger",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
