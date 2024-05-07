@@ -18,7 +18,8 @@
    "fieldname": "committee",
    "fieldtype": "Link",
    "label": "Committee",
-   "options": "Committee"
+   "options": "Committee",
+   "read_only": 1
   },
   {
    "fetch_from": "committee.committee_name",
@@ -52,7 +53,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-07 18:52:29.179683",
+ "modified": "2024-05-07 21:36:57.001632",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Member Committees",

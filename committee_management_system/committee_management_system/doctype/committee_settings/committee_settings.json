@@ -6,24 +6,39 @@
  "engine": "InnoDB",
  "field_order": [
   "committee_settings_section",
-  "defaul_committee_amount"
+  "defaul_committee_amount",
+  "column_break_midq",
+  "minimum_committee_duration_months"
  ],
  "fields": [
   {
    "fieldname": "defaul_committee_amount",
    "fieldtype": "Currency",
-   "label": "Default Committee Amount"
+   "label": "Default Committee Amount",
+   "non_negative": 1,
+   "precision": "2"
   },
   {
    "fieldname": "committee_settings_section",
    "fieldtype": "Section Break",
    "label": "Committee Settings"
+  },
+  {
+   "fieldname": "column_break_midq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "12",
+   "fieldname": "minimum_committee_duration_months",
+   "fieldtype": "Int",
+   "label": "Minimum Committee Duration (Months)",
+   "non_negative": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-05-07 18:37:24.743334",
+ "modified": "2024-05-07 21:45:07.360559",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Settings",

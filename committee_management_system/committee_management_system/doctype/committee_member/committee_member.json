@@ -50,7 +50,10 @@
   {
    "fieldname": "id_card_number",
    "fieldtype": "Data",
-   "label": "ID Card Number"
+   "in_list_view": 1,
+   "label": "ID Card Number",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "default": "1",
@@ -73,7 +76,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-07 18:49:29.713771",
+ "modified": "2024-05-07 21:42:47.653483",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Member",

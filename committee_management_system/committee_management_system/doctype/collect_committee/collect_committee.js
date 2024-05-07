@@ -10,5 +10,12 @@ frappe.ui.form.on("Collect Committee", {
                 }
             }
         });
+        frm.set_query('committee', () => {
+            return {
+                filters: {
+                    status: 'Ongoing'
+                }
+            };
+        });
 	},
 });

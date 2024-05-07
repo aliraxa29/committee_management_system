@@ -11,7 +11,8 @@
   "to_date",
   "column_break_wcgd",
   "committee_type",
-  "status"
+  "status",
+  "amount"
  ],
  "fields": [
   {
@@ -30,6 +31,8 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "To Start\nCompleted\nOngoing",
    "read_only": 1
@@ -41,13 +44,23 @@
   {
    "fieldname": "from_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "From Date",
    "reqd": 1
   },
   {
    "fieldname": "to_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount Slab",
+   "non_negative": 1,
+   "precision": "2",
    "reqd": 1
   }
  ],
@@ -62,7 +75,7 @@
    "link_fieldname": "committee"
   }
  ],
- "modified": "2024-05-07 18:26:52.919235",
+ "modified": "2024-05-07 21:52:46.964928",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee",

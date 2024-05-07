@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CE-.######",
+ "creation": "2024-05-07 21:57:16.260398",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vtqc",
+  "committee_member",
+  "full_name",
+  "create_cc",
+  "column_break_wpzt",
+  "committee",
+  "committee_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vtqc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "committee_member",
+   "fieldtype": "Link",
+   "label": "Committee Member",
+   "options": "Committee Member"
+  },
+  {
+   "fetch_from": "committee_member.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "committee",
+   "fieldtype": "Link",
+   "label": "Committee",
+   "options": "Committee"
+  },
+  {
+   "fieldname": "column_break_wpzt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "committee.committee_name",
+   "fieldname": "committee_name",
+   "fieldtype": "Read Only",
+   "label": "Committee Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Committee Enrollment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "create_cc",
+   "fieldtype": "Check",
+   "label": "Create Committee Collection on save"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-07 22:12:36.223516",
+ "modified_by": "Administrator",
+ "module": "Committee Management System",
+ "name": "Committee Enrollment",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

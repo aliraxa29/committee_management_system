@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"8x-IQqvKt2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Committee Management System</span>\",\"col\":12}},{\"id\":\"0rpp0w5JJu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Committee Member\",\"col\":3}},{\"id\":\"2HdxsOqDVK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Collect Committee\",\"col\":3}},{\"id\":\"wrE5slWxEn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Committee\",\"col\":3}},{\"id\":\"qRj-qZNL1y\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"-5EOwZbdib\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}},{\"id\":\"EEiDSVtNjD\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "content": "[{\"id\":\"8x-IQqvKt2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Committee Management System</span>\",\"col\":12}},{\"id\":\"0rpp0w5JJu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Committee Member\",\"col\":3}},{\"id\":\"2HdxsOqDVK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Collect Committee\",\"col\":3}},{\"id\":\"wrE5slWxEn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Committee\",\"col\":3}},{\"id\":\"nWb4FXRJ-z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Committee Enrollment\",\"col\":3}},{\"id\":\"qRj-qZNL1y\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"-5EOwZbdib\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}},{\"id\":\"EEiDSVtNjD\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"4R8vm1z4_I\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
  "creation": "2024-05-06 23:26:14.896454",
  "custom_blocks": [],
  "docstatus": 0,
@@ -60,9 +60,28 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee Ledger",
+   "link_count": 0,
+   "link_to": "Committee Ledger",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-05-07 18:44:20.104946",
+ "modified": "2024-05-07 22:02:52.230696",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Management System",
@@ -90,6 +109,14 @@
    "label": "Committee Member",
    "link_to": "Committee Member",
    "stats_filter": "[[\"Committee Member\",\"enabled\",\"=\",1,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Committee Enrollment",
+   "link_to": "Committee Enrollment",
+   "stats_filter": "[]",
    "type": "DocType"
   },
   {

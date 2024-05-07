@@ -10,5 +10,10 @@ frappe.ui.form.on("Committee Member", {
                 }
             };
         });
+    },
+    
+    onload: (frm) => {
+        frm.get_field("committees").grid.cannot_add_rows = true;
+        frm.get_field("committees").grid.only_sortable();
     }
 });
