@@ -1,24 +1,72 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "COM-.#####",
  "creation": "2024-05-07 17:42:06.130212",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_jvof"
+  "committee_name",
+  "from_date",
+  "to_date",
+  "column_break_wcgd",
+  "committee_type",
+  "status"
  ],
  "fields": [
   {
-   "fieldname": "section_break_jvof",
-   "fieldtype": "Section Break"
+   "fieldname": "committee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Committee Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "committee_type",
+   "fieldtype": "Select",
+   "label": "Committee Type",
+   "options": "Lucky\nRegular"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "To Start\nCompleted\nOngoing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wcgd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-05-07 17:42:06.130212",
+ "links": [
+  {
+   "link_doctype": "Committee Member",
+   "link_fieldname": "committee"
+  },
+  {
+   "link_doctype": "Collect Committee",
+   "link_fieldname": "committee"
+  }
+ ],
+ "modified": "2024-05-07 18:26:52.919235",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -36,5 +84,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "committee_name"
 }

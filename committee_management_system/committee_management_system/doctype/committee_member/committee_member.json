@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:id_card_number",
+ "autoname": "CM-.######",
  "creation": "2024-05-06 23:20:35.113252",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,7 +13,9 @@
   "column_break_zzlg",
   "last_name",
   "phone_number",
-  "enabled"
+  "enabled",
+  "committee_details_section",
+  "committees"
  ],
  "fields": [
   {
@@ -48,23 +50,34 @@
   {
    "fieldname": "id_card_number",
    "fieldtype": "Data",
-   "label": "ID Card Number",
-   "unique": 1
+   "label": "ID Card Number"
   },
   {
    "default": "1",
    "fieldname": "enabled",
    "fieldtype": "Check",
-   "label": "Enabled"
+   "label": "Enabled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "committee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Committee Details"
+  },
+  {
+   "fieldname": "committees",
+   "fieldtype": "Table",
+   "label": "Committees",
+   "options": "Committee Member Committees"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-06 23:25:13.862846",
+ "modified": "2024-05-07 18:49:29.713771",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Member",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

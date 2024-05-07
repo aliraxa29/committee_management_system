@@ -1,8 +1,14 @@
 // Copyright (c) 2024, Ali Raza and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Collect Committee", {
-// 	refresh(frm) {
-
-// 	},
-// });
+frappe.ui.form.on("Collect Committee", {
+	refresh(frm) {
+        frm.set_query('member', () => {
+            return {
+                filters: {
+                    enabled: 1
+                }
+            }
+        });
+	},
+});

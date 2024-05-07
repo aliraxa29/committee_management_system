@@ -10,10 +10,12 @@
   "naming_series",
   "member",
   "full_name",
-  "column_break_zxwt",
+  "committee",
+  "column_break_vzyd",
   "amount",
   "amended_from",
-  "month"
+  "month",
+  "committee_name"
  ],
  "fields": [
   {
@@ -42,10 +44,6 @@
    "label": "Full Name"
   },
   {
-   "fieldname": "column_break_zxwt",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "amount",
    "fieldtype": "Currency",
    "label": "Amount",
@@ -68,12 +66,28 @@
    "label": "Month",
    "options": "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec",
    "reqd": 1
+  },
+  {
+   "fieldname": "committee",
+   "fieldtype": "Link",
+   "label": "Committee",
+   "options": "Committee"
+  },
+  {
+   "fetch_from": "committee.committee_name",
+   "fieldname": "committee_name",
+   "fieldtype": "Read Only",
+   "label": "Committee Name"
+  },
+  {
+   "fieldname": "column_break_vzyd",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-06 23:46:36.990364",
+ "modified": "2024-05-07 18:24:31.004246",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Collect Committee",
