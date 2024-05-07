@@ -1,6 +1,6 @@
 frappe.listview_settings["Committee Ledger"] = {
-    refresh: (listview) => {
-        $(".btn-primary").hide();
-        $(".btn-secondary").hide();
-    }
+    refresh: function(listview) {
+	    $(".btn-primary").hide();
+        $(".btn-new-doc").hide();
+	}
 }

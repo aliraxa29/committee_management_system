@@ -3,6 +3,6 @@
 
 frappe.ui.form.on("Committee Ledger", {
 	refresh(frm) {
-        frm.page.btn_secondary.hide();     
+        frm.page.btn_primary.hide();     
 	},
 });
