@@ -16,35 +16,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Master",
-   "link_count": 2,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Committee Member",
-   "link_count": 0,
-   "link_to": "Committee Member",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Collect Committee",
-   "link_count": 0,
-   "link_to": "Collect Committee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Settings",
    "link_count": 1,
    "link_type": "DocType",
@@ -79,9 +50,58 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee Member",
+   "link_count": 0,
+   "link_to": "Committee Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collect Committee",
+   "link_count": 0,
+   "link_to": "Collect Committee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee",
+   "link_count": 0,
+   "link_to": "Committee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee Disbursement",
+   "link_count": 0,
+   "link_to": "Committee Disbursement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-05-07 22:02:52.230696",
+ "modified": "2024-05-08 22:27:06.635485",
  "modified_by": "Administrator",
  "module": "Committee Management System",
  "name": "Committee Management System",
@@ -91,7 +111,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 22.0,
+ "sequence_id": 1.0,
  "shortcuts": [
   {
    "color": "Blue",
