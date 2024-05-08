@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CDIS-.######",
+ "creation": "2024-05-08 09:36:45.740801",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_a7gk",
+  "committee_member",
+  "member_name",
+  "max_disbursement_amount",
+  "disbursement_amount",
+  "handed_over_by",
+  "disbursement_date",
+  "column_break_ntfn",
+  "posting_date",
+  "committee",
+  "committee_name",
+  "handed_over_to",
+  "phone_number",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_a7gk",
+   "fieldtype": "Section Break",
+   "label": "Member Information"
+  },
+  {
+   "fieldname": "committee_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Committee Member",
+   "options": "Committee Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "committee_member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Read Only",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "committee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Committee",
+   "options": "Committee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "committee.committee_name",
+   "fieldname": "committee_name",
+   "fieldtype": "Read Only",
+   "label": "Committee Name"
+  },
+  {
+   "fieldname": "disbursement_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Disbursement Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "handed_over_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Handed Over By",
+   "reqd": 1
+  },
+  {
+   "fieldname": "handed_over_to",
+   "fieldtype": "Data",
+   "label": "Handed Over To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Handed Over To Phone No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ntfn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Committee Disbursement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "disbursement_date",
+   "fieldtype": "Datetime",
+   "label": "Disbursement Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "max_disbursement_amount",
+   "fieldtype": "Currency",
+   "label": "Max. Disbursement Amount",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-08 09:57:47.765691",
+ "modified_by": "Administrator",
+ "module": "Committee Management System",
+ "name": "Committee Disbursement",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_name"
+}
